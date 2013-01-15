@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C72AA82B-444C-4C51-976C-31159773971C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShopDienThoai</RootNamespace>
+    <AssemblyName>ShopDienThoai</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\UC_Banner.ascx" />
+    <Content Include="Controls\UC_CacHangDienThoai.ascx" />
+    <Content Include="Controls\UC_DienThoaiBanChay.ascx" />
+    <Content Include="Controls\UC_GioHangNho.ascx" />
+    <Content Include="Controls\UC_HoTroTrucTuyen.ascx" />
+    <Content Include="Controls\UC_Menu.ascx" />
+    <Content Include="Controls\UC_SoSanhDienThoai.ascx" />
+    <Content Include="Controls\UC_TimKiemDienThoai.ascx" />
+    <Content Include="Controls\UC_TimTheoTinhNang.ascx" />
+    <Content Include="css\nivo-slider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\tabs.css" />
+    <Content Include="images\accept.png" />
+    <Content Include="images\admin_bg_bottom.png" />
+    <Content Include="images\admin_bg_middle.png" />
+    <Content Include="images\Admin_Title.png" />
+    <Content Include="images\APPLE\1326308133_ip4s-black-large.jpg" />
+    <Content Include="images\APPLE\1326308268_Iphone-4s-black-wall.jpg" />
+    <Content Include="images\APPLE\1326308350_ip4-8-w-large.jpg" />
+    <Content Include="images\APPLE\1326308504_iPhone-4G.jpg" />
+    <Content Include="images\banner_top.jpg" />
+    <Content Include="images\bg_body.jpg" />
+    <Content Include="images\bg_body.png" />
+    <Content Include="images\bg_bottom.png" />
+    <Content Include="images\bg_bottom_div_1.png" />
+    <Content Include="images\bg_bottom_largest.png" />
+    <Content Include="images\bg_bottom_top.png" />
+    <Content Include="images\bg_middle.png" />
+    <Content Include="images\bg_middle_div_1.png" />
+    <Content Include="images\bg_middle_largest.png" />
+    <Content Include="images\bg_title_div_1.png" />
+    <Content Include="images\bg_title_large.png" />
+    <Content Include="images\bg_title_largest.png" />
+    <Content Include="images\bg_title_small.png" />
+    <Content Include="images\BLACKBERRY\1326307034_9630-large.jpg" />
+    <Content Include="images\BLACKBERRY\1326307245_9630-wall.jpg" />
+    <Content Include="images\BLACKBERRY\1326307368_9300 2.jpg" />
+    <Content Include="images\BLACKBERRY\1326307519_9300.jpg" />
+    <Content Include="images\b_drop.png" />
+    <Content Include="images\CapNhat.jpg" />
+    <Content Include="images\chitiet.png" />
+    <Content Include="images\DangKy.jpg" />
+    <Content Include="images\DangNhap.jpg" />
+    <Content Include="images\dathang_but.gif" />
+    <Content Include="images\DatMuaNgay.jpg" />
+    <Content Include="images\DatMuaNgay2.jpg" />
+    <Content Include="images\HTC\1326306598_Rhyme-white-dock-large.jpg" />
+    <Content Include="images\HTC\1326306711_Rhyme-white-dock-wall1.jpg" />
+    <Content Include="images\HTC\1326306799_Sensation-XE-largel.jpg" />
+    <Content Include="images\HTC\1326306940_Sensation-XE-wall1.jpg" />
+    <Content Include="images\LG\1326302217_T515-small.jpg" />
+    <Content Include="images\LG\1326302386_T515-wall.jpg" />
+    <Content Include="images\LG\1326302560_net-large.jpg" />
+    <Content Include="images\LG\1326302700_net-wall1.jpg" />
+    <Content Include="images\LG\1326302822_sol-large.jpg" />
+    <Content Include="images\LG\1326302955_sol-wall.jpg" />
+    <Content Include="images\LG\1326303264_Op-hub-large.jpg" />
+    <Content Include="images\LG\1326303386_Op-hub-wall.jpg" />
+    <Content Include="images\LG\1326303449_C375-large.jpg" />
+    <Content Include="images\LG\1326303548_C275-wall.jpg" />
+    <Content Include="images\MOTOROLA\1326308589_Defy large.jpg" />
+    <Content Include="images\MOTOROLA\1326308738_defy-wall.jpg" />
+    <Content Include="images\MOTOROLA\1326308815_EX115-lon.jpg" />
+    <Content Include="images\MOTOROLA\1326308939_EX115-dual-sim.jpg" />
+    <Content Include="images\NOKIA\Nokia 101 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia 101.jpg" />
+    <Content Include="images\NOKIA\Nokia 5233 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia 5233.jpg" />
+    <Content Include="images\NOKIA\Nokia 5250 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia 5250.jpg" />
+    <Content Include="images\NOKIA\Nokia 6303i Classic Large.jpg" />
+    <Content Include="images\NOKIA\Nokia 6303i Classic.jpg" />
+    <Content Include="images\NOKIA\Nokia Asha 300 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia Asha 300.jpg" />
+    <Content Include="images\NOKIA\Nokia Asha 303 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia Asha 303.jpg" />
+    <Content Include="images\NOKIA\Nokia C1-00 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C1-00.jpg" />
+    <Content Include="images\NOKIA\Nokia C1-02 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C1-02.jpg" />
+    <Content Include="images\NOKIA\Nokia C2-00 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C2-00.jpg" />
+    <Content Include="images\NOKIA\Nokia C2-01 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C2-01.jpg" />
+    <Content Include="images\NOKIA\Nokia C2-03 Touch and Type Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C2-03 Touch and Type.jpg" />
+    <Content Include="images\NOKIA\Nokia C3-00 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C3-00.jpg" />
+    <Content Include="images\NOKIA\Nokia C3-01 Touch and Type Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C3-01 Touch and Type.jpg" />
+    <Content Include="images\NOKIA\Nokia C5-00 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C5-00.2 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C5-00.2.jpg" />
+    <Content Include="images\NOKIA\Nokia C5-00.jpg" />
+    <Content Include="images\NOKIA\Nokia C5-03 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C5-03.jpg" />
+    <Content Include="images\NOKIA\Nokia C5-06 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C5-06.jpg" />
+    <Content Include="images\NOKIA\Nokia C6 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C6-01 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C6-01.jpg" />
+    <Content Include="images\NOKIA\Nokia C6.jpg" />
+    <Content Include="images\NOKIA\Nokia C7 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia C7.jpg" />
+    <Content Include="images\NOKIA\Nokia E5 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia E5.jpg" />
+    <Content Include="images\NOKIA\Nokia E6-00 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia E6-00.jpg" />
+    <Content Include="images\NOKIA\Nokia E7 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia E7.jpg" />
+    <Content Include="images\NOKIA\Nokia N8 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia N8.jpg" />
+    <Content Include="images\NOKIA\Nokia N9 16 GB Large.jpg" />
+    <Content Include="images\NOKIA\Nokia N9 16 GB.jpg" />
+    <Content Include="images\NOKIA\Nokia N9 64 GB Large.jpg" />
+    <Content Include="images\NOKIA\Nokia N9 64 GB.jpg" />
+    <Content Include="images\NOKIA\Nokia N900 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia N900.jpg" />
+    <Content Include="images\NOKIA\Nokia X1-01 Dual sim Large.jpg" />
+    <Content Include="images\NOKIA\Nokia X1-01 Dual sim.jpg" />
+    <Content Include="images\NOKIA\Nokia X2-00 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia X2-00.jpg" />
+    <Content Include="images\NOKIA\Nokia X2-01 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia X2-01.jpg" />
+    <Content Include="images\NOKIA\Nokia X3 Touch and Type Large.jpg" />
+    <Content Include="images\NOKIA\Nokia X3 Touch and Type.jpg" />
+    <Content Include="images\NOKIA\Nokia X3-02.5 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia X3-02.5.jpg" />
+    <Content Include="images\NOKIA\Nokia X6 8GB Large.jpg" />
+    <Content Include="images\NOKIA\Nokia X6 8GB.jpg" />
+    <Content Include="images\NOKIA\Nokia X7-00 Large.jpg" />
+    <Content Include="images\NOKIA\Nokia X7-00.jpg" />
+    <Content Include="images\no_image.jpg" />
+    <Content Include="images\reload.gif" />
+    <Content Include="images\SAMSUNG\1326273043_g-II-W-LARGE.jpg" />
+    <Content Include="images\SAMSUNG\1326273181_I9100G-wall.jpg" />
+    <Content Include="images\SAMSUNG\1326304069_ga-w-large.jpg" />
+    <Content Include="images\SAMSUNG\1326304181_ga-w-wall.jpg" />
+    <Content Include="images\SAMSUNG\1326304258_note-large.jpg" />
+    <Content Include="images\SAMSUNG\1326304412_note-wall.jpg" />
+    <Content Include="images\SAMSUNG\1326304502_Ch%40t-222-large.jpg" />
+    <Content Include="images\SAMSUNG\1326304609_Ch%40t222-wall.jpg" />
+    <Content Include="images\SAMSUNG\1326304716_E2652W-largel.jpg" />
+    <Content Include="images\SAMSUNG\1326304853_champ-duos-wifi.jpg" />
+    <Content Include="images\slider\1.gif" />
+    <Content Include="images\slider\2.gif" />
+    <Content Include="images\slider\3.gif" />
+    <Content Include="images\slider\4.gif" />
+    <Content Include="images\slider\bullets.png" />
+    <Content Include="images\slider\slider1.gif" />
+    <Content Include="images\slider\slider2.gif" />
+    <Content Include="images\slider\slider3.gif" />
+    <Content Include="images\slider\slider4.gif" />
+    <Content Include="images\slider\_notes\dwsync.xml" />
+    <Content Include="images\SONY ERICSSON\1326305462_ARC-S-large.jpg" />
+    <Content Include="images\SONY ERICSSON\1326305607_arc-s-WALL.jpg" />
+    <Content Include="images\SONY ERICSSON\1326305677_xperia-active-large.jpg" />
+    <Content Include="images\SONY ERICSSON\1326305826_xperia-active-wall.jpg" />
+    <Content Include="images\SONY ERICSSON\1326305888_live-walkman-large.jpg" />
+    <Content Include="images\SONY ERICSSON\1326306052_live-walkman-wall.jpg" />
+    <Content Include="images\SONY ERICSSON\1326306122_cedar-large.jpg" />
+    <Content Include="images\SONY ERICSSON\1326306234_Cedar-wall2.jpg" />
+    <Content Include="images\SONY ERICSSON\1326306309_mix-walkman-large.jpg" />
+    <Content Include="images\SONY ERICSSON\1326306412_mix-wall.jpg" />
+    <Content Include="images\SoSanh.gif" />
+    <Content Include="images\SoSanh.jpg" />
+    <Content Include="images\sua.png" />
+    <Content Include="images\SuaDonHang.jpg" />
+    <Content Include="images\TiepTucMuaHang.jpg" />
+    <Content Include="images\Tim Theo Tinh Nang\10_vibration_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\11_officeApp_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\12_CDMA_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\13_clock_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\14_WIFi_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\15_infrared_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\16_mp3_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\17_java_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\18_bluetooth_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\19_TwoSim_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\1_camera_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\2_FM_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\3_memoryCard_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\4_GPRS_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\5_videoCamera_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\6_ringtone_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\7_sound1_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\8_3G_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\9_record_icon.gif" />
+    <Content Include="images\Tim Theo Tinh Nang\_notes\dwsync.xml" />
+    <Content Include="images\title_tab.png" />
+    <Content Include="images\title_tab_active.png" />
+    <Content Include="images\title_tab_active_bk.png" />
+    <Content Include="images\top.png" />
+    <Content Include="images\welcome.jpg" />
+    <Content Include="images\WELLCOM\1326307790_W918-d.jpg" />
+    <Content Include="images\WELLCOM\1326307954_WellcomW918.jpg" />
+    <Content Include="images\xemchitiet_but.gif" />
+    <Content Include="images\xoa.png" />
+    <Content Include="js\ajax.js" />
+    <Content Include="js\dangky_xuly.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.nivo.slider.pack.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\nivo.js" />
+    <Content Include="js\scw.js" />
+    <Content Include="MasterPage1.Master" />
+    <Content Include="Global.asax" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="search.aspx" />
+    <None Include="Web References\WSSDT\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSSDT\WSSDT.disco" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="index.aspx" />
+    <Content Include="dienthoai.aspx" />
+    <Content Include="dienthoaichitiet.aspx" />
+    <Content Include="dangky.aspx" />
+    <Content Include="dangnhap.aspx" />
+    <Content Include="giohang.aspx" />
+    <Content Include="sosanhdienthoai.aspx" />
+    <None Include="Web References\WSSDT\WSSDT.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\UC_Banner.ascx.cs">
+      <DependentUpon>UC_Banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UC_Banner.ascx.designer.cs">
+      <DependentUpon>UC_Banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC_CacHangDienThoai.ascx.cs">
+      <DependentUpon>UC_CacHangDienThoai.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UC_CacHangDienThoai.ascx.designer.cs">
+      <DependentUpon>UC_CacHangDienThoai.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC_DienThoaiBanChay.ascx.cs">
+      <DependentUpon>UC_DienThoaiBanChay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UC_DienThoaiBanChay.ascx.designer.cs">
+      <DependentUpon>UC_DienThoaiBanChay.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC_GioHangNho.ascx.cs">
+      <DependentUpon>UC_GioHangNho.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UC_GioHangNho.ascx.designer.cs">
+      <DependentUpon>UC_GioHangNho.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC_HoTroTrucTuyen.ascx.cs">
+      <DependentUpon>UC_HoTroTrucTuyen.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UC_HoTroTrucTuyen.ascx.designer.cs">
+      <DependentUpon>UC_HoTroTrucTuyen.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC_Menu.ascx.cs">
+      <DependentUpon>UC_Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UC_Menu.ascx.designer.cs">
+      <DependentUpon>UC_Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC_SoSanhDienThoai.ascx.cs">
+      <DependentUpon>UC_SoSanhDienThoai.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UC_SoSanhDienThoai.ascx.designer.cs">
+      <DependentUpon>UC_SoSanhDienThoai.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC_TimKiemDienThoai.ascx.cs">
+      <DependentUpon>UC_TimKiemDienThoai.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UC_TimKiemDienThoai.ascx.designer.cs">
+      <DependentUpon>UC_TimKiemDienThoai.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UC_TimTheoTinhNang.ascx.cs">
+      <DependentUpon>UC_TimTheoTinhNang.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UC_TimTheoTinhNang.ascx.designer.cs">
+      <DependentUpon>UC_TimTheoTinhNang.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage1.Master.cs">
+      <DependentUpon>MasterPage1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage1.Master.designer.cs">
+      <DependentUpon>MasterPage1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage2.Master.cs">
+      <DependentUpon>MasterPage2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage2.Master.designer.cs">
+      <DependentUpon>MasterPage2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage3.Master.cs">
+      <DependentUpon>MasterPage3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage3.Master.designer.cs">
+      <DependentUpon>MasterPage3.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dienthoai.aspx.cs">
+      <DependentUpon>dienthoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dienthoai.aspx.designer.cs">
+      <DependentUpon>dienthoai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dienthoaichitiet.aspx.cs">
+      <DependentUpon>dienthoaichitiet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dienthoaichitiet.aspx.designer.cs">
+      <DependentUpon>dienthoaichitiet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dangky.aspx.cs">
+      <DependentUpon>dangky.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dangky.aspx.designer.cs">
+      <DependentUpon>dangky.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dangnhap.aspx.cs">
+      <DependentUpon>dangnhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dangnhap.aspx.designer.cs">
+      <DependentUpon>dangnhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="giohang.aspx.cs">
+      <DependentUpon>giohang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="giohang.aspx.designer.cs">
+      <DependentUpon>giohang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sosanhdienthoai.aspx.cs">
+      <DependentUpon>sosanhdienthoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sosanhdienthoai.aspx.designer.cs">
+      <DependentUpon>sosanhdienthoai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSSDT\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="images\BENQ-SIEMENS\" />
+    <Folder Include="images\LENOVO\" />
+    <Folder Include="images\Q.MOBILE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\100.psd" />
+    <Content Include="MasterPage2.Master" />
+    <Content Include="MasterPage3.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:57821/WSSDT.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSSDT\</RelPath>
+      <UpdateFromURL>http://localhost:57821/WSSDT.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ShopDienThoai_WSSDT_WSSDT</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58241</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

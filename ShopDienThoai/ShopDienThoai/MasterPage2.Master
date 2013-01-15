@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage2.master.cs" Inherits="ShopDienThoai.MasterPage2" %>
+
+<%@ Register src="Controls/UC_Banner.ascx" tagname="UC_Banner" tagprefix="uc1" %>
+
+<%@ Register src="Controls/UC_Menu.ascx" tagname="UC_Menu" tagprefix="uc2" %>
+
+<%@ Register src="Controls/UC_DienThoaiBanChay.ascx" tagname="UC_DienThoaiBanChay" tagprefix="uc3" %>
+
+<%@ Register src="Controls/UC_HoTroTrucTuyen.ascx" tagname="UC_HoTroTrucTuyen" tagprefix="uc4" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Phạm Hồng Tiến | 0168 846 4040</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/dangky_xuly.js"></script>
+</head>
+<body>
+<form id="FormMaster2" runat="server">
+<asp:ScriptManager ID="ScriptManager2" runat="server">
+</asp:ScriptManager>
+<div id="tooltip"></div>
+<center><div id="container">
+    <div id="ctn_banner">
+        <uc1:UC_Banner ID="UC_Banner" runat="server" />
+    </div><!--End #banner-->
+    
+    <div id="menu_top">
+        <uc2:UC_Menu ID="UC_Menu1" runat="server" />
+    </div><!-- End #menu_top-->
+    
+    <div id="content2">
+            <asp:ContentPlaceHolder ID="DetailContent" runat="server">
+            </asp:ContentPlaceHolder>
+    </div><!--End #content2-->
+    
+    <div id="sidebarright">
+        <div class="ctn_dienthoaibanchay">
+            <uc3:UC_DienThoaiBanChay ID="UC_DienThoaiBanChay1" runat="server" />
+        </div><!--End .ctn_dienthoaibanchay-->
+
+        <div class="ctn_hotrotructuyen">
+            <uc4:UC_HoTroTrucTuyen ID="UC_HoTroTrucTuyen1" runat="server" />
+        </div><!--End .ctn_hotrotructuyen-->
+    </div><!--End #sidebarright-->
+    
+    <div id="footer">
+    </div><!--End.#footer-->
+    
+</div><!--End #container-->
+</center>
+</form>
+</body>
+</html>

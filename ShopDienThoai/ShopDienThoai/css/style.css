@@ -1,0 +1,741 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px; padding:0px;}
+
+body{
+	background:url(../images/bg_body.jpg) repeat-y center top #d10003 fixed;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	
+	//background:#000 ;
+}
+
+table{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+}
+
+select, textarea{
+		font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	
+}
+
+#container{
+	width:1000px;
+	//border:1px solid #dcdcdc;
+	margin:0px auto;
+	//height:1500px;
+	display:inline-block;
+	background:#FFF;
+}
+
+#ctn_banner{
+	width:100%;
+	height:150px;
+		//border:1px solid #dcdcdc;
+		position:relative;
+}
+#ctn_banner .banner{
+	background:url(../images/top.png) no-repeat;
+	width:100%;
+	height:100%;
+	//margin-left:-2px;
+	position:absolute;
+	left:-1px;
+	width:1003px;
+}
+
+#menu_top{
+	width:100%;
+	height:30px;
+	//border: 1px solid #dcdcdc;
+	background:#FFF;
+	margin-left:-2px;
+}
+
+#container #sidebarleft{
+	width:200px;
+	//border:1px solid #dcdcdc;
+	//height:1500px;
+	background:#FFF;
+	float:left;
+	//margin-left:-1px;
+	margin-top:5px;
+}
+
+.ctn_admin{
+	//margin-left:-1px;
+}
+	
+#container #content{
+	width:590px;
+	//height:1000px;
+	margin-left:5px;
+	margin-top:5px;
+	padding:0px ;
+	//border:1px solid #dcdcdc;
+	
+	background:#FFF;
+	float:left;
+	display:inline-block;
+}
+#container #content2{
+	width:795px;
+	
+	margin-top:5px;
+	background:#FFF;
+	float:left;
+	display:inline-block;
+}
+
+#container #sidebarright{
+	width:200px;
+	//border:1px solid #dcdcdc;
+	//height:1500px;
+	background:#FFF;
+	float:left;
+	margin-left:5px;
+	//margin-right:5px;
+	margin-top:5px;
+}
+
+#footer{
+	height:100px;
+	width:100%;
+	border:1px solid #F00;
+	float:left;
+	//margin-left:-2px;
+}
+
+.div_border{
+	display:block;
+	border: 1px solid #dcdcdc;
+	border-top:none;
+	padding:5px 0px 10px;
+	//text-align:center;
+	-moz-border-radius:0px 0px 5px 5px;
+	-webkit-border-radius:0px 0px 5px 5px;
+}
+/**********************************BG Title New ******************************************************/
+.title_div_1{
+width:200px;
+height:38px;
+background:url(../images/bg_title_div_1.png) no-repeat;
+}
+
+.middle_div_1{
+width:200px;
+display:inline-block;
+background:url(../images/bg_middle_div_1.png) repeat-y;
+}
+
+.bottom_div_1{
+width:200px;
+height:16px;
+background:url(../images/bg_bottom_div_1.png) no-repeat;
+}
+/****************************************************************************************/
+
+/**********************************BG Title Old ******************************************************/
+.title_small{
+	background:url(../images/bg_title_small.png);
+	text-align:center;
+	height:38px;
+	//padding-bottom:0px;
+}
+.div_middle_bg_small{
+	background:url(../images/bg_middle_small.png);
+	padding:10px 0px 10px 0px;
+}
+.div_bottom_bg_small{
+	background:url(../images/bg_bottom_small.png);
+	height:10px;
+}
+/****************************************************************************************/
+
+
+.content_title_large{background:url(../images/bg_title_large.png) no-repeat;text-align:center;height:38px;}
+.text_title{color:#3C3B3C;padding:12px 0px 0px 0px}
+.end_large{background:url(../images/bg_bottom.png) no-repeat; width:100%; height:10px}
+.bg_middle{padding-bottom:10px;	display:inline-block;background:url(../images/bg_middle.png);}
+.top_large{background:url(../images/bg_bottom_top.png) no-repeat; width:100%; height:10px; //margin-bottom:10px;}
+
+
+
+.title_largest{background:url(../images/bg_title_largest.png) no-repeat;text-align:center;height:38px;}
+.bg_middle_largest{padding-bottom:10px;	display:inline-block;background:url(../images/bg_middle_largest.png);}
+.bg_end_largest{background:url(../images/bg_bottom_largest.png) no-repeat; width:100%; height:10px}
+
+.admin_bg_title{background:url(../images/Admin_Title.png) no-repeat;text-align:center;height:38px;}
+.admin_bg_middle{padding-bottom:10px;	display:inline-block;background:url(../images/admin_bg_middle.png) repeat-y;}
+.admin_bg_bottom{background:url(../images/admin_bg_bottom.png) no-repeat; width:100%; height:10px}
+
+
+
+.mg{
+	margin-top:10px;
+}
+
+.mgt_15{
+	margin-top:15px;	
+}
+
+a{
+	text-decoration:none;
+	color:#00F;
+}
+
+.select_style{
+	width:172px;
+	height:22px;
+	padding:2px 2px;
+	margin:3px 0px;
+	border:1px solid #dcdcdc;
+}
+
+.tendt{
+	color:#21409A;
+	font-weight:bold;
+	font-size:13px;
+}
+
+.giadt{
+	color:#F00;
+}
+
+.col_text{
+	color:#B22222;
+}
+.weight_text{font-weight:bold}
+
+
+
+
+#content2{
+	width:793px;
+	background:#FFF;
+	float:left;
+	display:inline-block;
+}
+#content3{
+	width:793px;
+	//height:1000px;
+	background:#FFF;
+	float:left;
+	display:inline-block;
+	margin-left:5px;
+	//border:1px solid #dcdcdc;
+	margin-top:5px;
+
+}
+
+.clear{
+	clear:both;	
+}
+
+.bd-right{border-right:1px solid #dcdcdc}
+
+a:hover{text-decoration:underline}
+/*
+====================================================================
+MENU_TOP
+====================================================================
+*/
+#menu_top ul li{
+	float:left;	
+	list-style:none;
+	padding:0px;
+	margin:0px;
+
+}
+
+#menu_top ul li a{
+	color: #292929;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 7px 10px;
+    text-decoration: none;
+}
+
+#menu_top ul li a:hover{
+	background:#FCD437;
+}
+
+#menu_top .thongtindangnhap{
+	float:right;
+	padding:7px 5px;
+}
+#menu_top .thongtindangnhap a{
+	color:#000;	
+}
+#menu_top .thongtindangnhap a:hover{
+	color:orange;	
+}
+
+
+
+
+/*
+====================================================================
+SiderbarLeft
+====================================================================
+*/
+
+.ctn_timkiemdienthoai .timkiemdienthoai{
+	text-align:center;	
+	
+}
+.ctn_timkiemdienthoai .timkiemdienthoai .a{
+	width:170px;
+	border:1px solid #dcdcdc;
+	height:25px;
+}
+
+.ctn_cachangdienthoai .cachangdienthoai table{
+	width:90%;	
+}
+.ctn_cachangdienthoai .cachangdienthoai table tr td{
+	
+	text-align:left;
+	border-top:1px dotted #dcdcdc;
+
+}
+
+.ctn_cachangdienthoai .cachangdienthoai table tr td a{
+	display:block;
+	color:#292929;
+	padding:5px 0px 5px 10px;
+	font-weight:bold;
+	
+
+}
+.ctn_cachangdienthoai .cachangdienthoai table tr td a:hover{
+	color:orange;
+}
+
+.ctn_giohangnho .giohangnho table{
+	width:90%;	
+}
+.ctn_giohangnho .giohangnho table tr td{
+	text-align:left;
+	padding:5px 0px 5px 15px ;
+	border-bottom:1px solid #dcdcdc;
+}
+
+
+/*
+====================================================================
+SiderbarRight
+====================================================================
+*/
+
+.ctn_timtheotinhnang .timtheotinhnang table tr td{
+	padding:5px 5px 5px 5px;
+	//text-align:left;
+}
+
+.ctn_dienthoaibanchay .dienthoaibanchay table{
+	width:90%;	
+}
+.ctn_dienthoaibanchay .dienthoaibanchay table tr td{
+	text-align:left;
+	padding:5px 0px 5px 15px ;
+	border-bottom:1px dotted #dcdcdc;
+}
+
+.ctn_dienthoaibanchay .dienthoaibanchay table tr td.b{
+	padding-left:20px !important;
+}
+
+/*
+====================================================================
+INDEX
+====================================================================
+*/
+
+.ctn_dienthoaimoi .dienthoaimoi ul li{
+	list-style:none;
+	//width:145px;
+	width:139px;
+	height:200px;
+	border:1px solid #dcdcdc;
+	//border-top:none;
+	float:left;
+	//border-left:none;
+	padding-top:0px;
+}
+
+.first{
+	margin-left:12px; 
+	border-left:1px solid #dcdcdc !important;	
+}
+
+
+/*
+====================================================================
+DienThoai
+====================================================================
+*/
+
+.ctn_dienthoai .dienthoai table{
+	width:99%;
+	//border:1px solid #dcdcdc;
+	border-collapse:collapse;
+	//margin-left:-1px;
+	//margin-bottom:20px;
+}
+.ctn_dienthoai .dienthoai table tr td{
+	//border:1px solid #dcdcdc;	
+	text-align:center;
+	padding:5px 0px;
+	border-right:1px solid #dcdcdc;
+	border-bottom:1px solid #dcdcdc;
+	height:150px;
+}
+.ctn_dienthoai .dienthoai .pages table{
+	border:none;	
+}
+.ctn_dienthoai .dienthoai .pages table td{
+	height:30px;
+	border:none;
+	text-align:right;
+	padding-right:5px;
+}
+
+.left{
+	text-align:left !important;	
+	padding-left:10px !important;
+}
+
+/*
+====================================================================
+Gio Hang || Thanh Toan
+====================================================================
+*/
+
+.col_tr{
+	background:#F5F5F5;	
+}
+
+#content2 .ctn_giohang table,
+#content2 .ctn_thanhtoan table{
+	width:99%;
+	border-collapse:collapse;
+	//border:1px solid #dcdcdc;
+	margin-left:5px;
+}
+
+#content2 .ctn_giohang table tr td,
+#content2 .ctn_thanhtoan table tr td{
+	padding:5px 0px;
+	border-right:1px solid #dcdcdc;
+	border-bottom:1px solid #dcdcdc;
+}
+
+#content2 .ctn_giohang table tr td input,
+#content2 .ctn_thanhtoan table tr td input{
+	height:25px;
+	width:25px;
+	text-align:center;
+}
+
+#content2 .nguoidathang table,
+#content2 .nguoinhanhang table{
+	width:100%;
+	border-collapse:collapse;
+	border:none;
+}
+#content2 .nguoidathang table tr td,
+#content2 .nguoinhanhang table tr td{
+	padding:5px;	
+	border:none;
+	
+}
+
+
+#content2 .nguoidathang table tr td input,
+#content2 .nguoinhanhang table tr td input{
+	height:22px;
+	width:230px;
+	max-width:230px;
+	border:1px solid #FEA700;
+	text-align:left;
+	padding-left:5px;
+}
+
+#content2 .nguoidathang table tr td textarea,
+#content2 .nguoinhanhang table tr td textarea{
+	height:50px;
+	width:230px;
+	border:1px solid #FEA700;
+	padding:5px;
+}
+
+.bd_td_orange{border:1px solid orange}
+
+/*
+====================================================================
+Đăng nhập
+====================================================================
+*/
+#content2 .ctn_dangnhap table{
+	width:750px;
+	border:none;
+}
+
+#content2 .ctn_dangnhap table tr td{
+	padding:5px;	
+}
+
+#content2 .ctn_dangnhap .styleinput{
+	width:230px;
+	height:20px;
+	border:1px solid #FEA700;
+}
+
+/*
+====================================================================
+Đăng ký
+====================================================================
+*/
+#content2 .ctn_dangky table{
+	width:750px;
+	border:none;
+}
+
+#content2 .ctn_dangky table tr td{
+	padding:5px;	
+}
+
+#content2 .ctn_dangky table tr td input{
+	height:22px;
+	width:230px;
+	max-width:230px;
+	border:1px solid #FEA700;
+}
+
+#content2 .ctn_dangky table tr td textarea{
+	height:50px;
+	width:230px;
+	border:1px solid #FEA700;
+}
+#content2 .ctn_dangky select{
+	width:70px;
+	height:22px;
+	padding:2px 2px 2px 5px;
+	border:1px solid #FEA700;		
+}
+#content2 .ctn_dangky img{
+	margin-bottom:-2px;
+}
+.capcha{height:22px;border:1px solid #FEA700;padding-left:3px;}
+
+/*
+====================================================================
+DienThoaiChiTiet
+====================================================================
+*/
+
+.dienthoaichitiet table{
+	width:590px;
+	height:250px;
+	//border:1px solid #dcdcdc;
+	border-collapse:collapse;
+	margin:10px 0px;
+	
+}
+
+
+.dienthoaichitiet table tr td{
+
+	padding:0px 5px;
+	//border-left:1px solid #dcdcdc;
+	//height:200px;	
+}
+
+.ctn_dienthoaidonggia .dienthoaidonggia{padding:10px 0px;}
+
+.ctn_dienthoaidonggia legend{
+	margin-left:10px;
+}
+
+.ctn_dienthoaidonggia fieldset{
+	border:1px solid #dcdcdc;
+	width:589px;
+	display:inline-block;
+	margin-bottom:20px;
+	margin-top:10px;
+	text-align:center;
+	border-radius:5px;
+}
+
+/*
+====================================================================
+SoSanh
+====================================================================
+*/
+
+#content3 .sosanhdienthoai table{
+	width:99%;
+	//border:1px solid #dcdcdc;
+	border-collapse:collapse;
+	margin-bottom:20px;
+	margin-left:3px;
+}
+
+#content3 .sosanhdienthoai table tr td{
+	padding:5px 5px;
+	border:1px solid #dcdcdc;
+	
+}
+
+#content3 .sosanhdienthoai table select{
+	width:150px;
+	border:1px solid #dcdcdc;
+	height:22px;
+	padding:2px 2px;
+}
+#content3 .sosanhdienthoai{
+	display:block;
+	//border: 1px solid #dcdcdc;
+	border-top:none;
+	//padding:5px 0px 10px;
+	//text-align:center;
+	
+}
+
+/*
+====================================================================
+Tooltip
+====================================================================
+*/
+
+
+#tooltip{
+	width:300px;
+	//height:300px;
+	
+	display:none;
+	border:1px solid orange;
+	position:absolute; z-index:2000;
+	background:#EDEDED;
+
+}
+
+#tooltip table{
+	width:100%;
+	
+}
+#tooltip table tr td{
+	padding:10px;
+}
+
+.pages{
+	text-align:right;
+	padding:5px 5px 0px;
+}
+
+.accept{color:#0F0; font-size:11px}
+.not_accept{color:red; font-size:11px;}
+
+
+
+.ctn_admin .themchucnang table{
+width:99%;
+border-collapse:collapse;
+}
+.ctn_admin table tr td{
+border:1px solid #dcdcdc;	
+padding:5px 0;
+}
+
+.ctn_admin .themdienthoaimoi table{
+	width:60%;
+	border-collapse:collapse;
+	margin:10px 0;
+}
+
+.ctn_admin .themdienthoaimoi table tr td{
+	border:1px solid #dcdcdc;
+	padding:5px 0 5px 5px;
+}
+
+.admin_style_input{
+	width:300px;
+	height:22px;
+	border:1px solid orange;
+}
+
+.admin_style_texarea{
+	width:300px;
+	height:100px;
+	border:1px solid orange;
+	max-width:300px;
+}
+.admin_style_texarea_500{
+	width:500px;
+	height:100px;
+	border:1px solid orange;
+	max-width:500px;
+}
+.admin_style_select{
+	width:200px;
+	height:22px;
+	border:1px solid orange;
+	padding:2px;
+	
+}
+.ctn_admin .dienthoai table{
+	width:99%;
+	border-collapse:collapse;
+	margin:10px 0;
+}
+
+.ctn_admin .pages table{
+	width:99%;
+	border:none;
+}
+.ctn_admin .pages table tr td{
+	border:none;
+}
+
+.trhover:hover td{
+	background:#cddcdc;
+}
+
+
+
+.ctn_admin .dangnhap table{
+	width:99%;
+	border:none;
+	margin:10px 0;
+}
+
+.ctn_admin .dangnhap table tr td{
+	border:none;
+	padding:5px 0 5px 5px;
+}
+
+.ctn_admin .chucnangdienthoai table{
+	width:99%;
+	border-collapse:collapse;
+	border:none;
+	margin:10px 0;
+}
+
+.ctn_admin .chucnangdienthoai table tr td{
+	border:1px solid #dcdcdc;
+	//border:none;
+	padding:5px;
+}
+
+
+
+
+
+	
+
+
+

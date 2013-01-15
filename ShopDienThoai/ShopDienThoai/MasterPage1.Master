@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage1.master.cs" Inherits="ShopDienThoai.MasterPage1" %>
+
+<%@ Register src="Controls/UC_Banner.ascx" tagname="UC_Banner" tagprefix="uc1" %>
+
+<%@ Register src="Controls/UC_Menu.ascx" tagname="UC_Menu" tagprefix="uc2" %>
+
+<%@ Register src="Controls/UC_TimKiemDienThoai.ascx" tagname="UC_TimKiemDienThoai" tagprefix="uc3" %>
+
+<%@ Register src="Controls/UC_CacHangDienThoai.ascx" tagname="UC_CacHangDienThoai" tagprefix="uc4" %>
+
+<%@ Register src="Controls/UC_SoSanhDienThoai.ascx" tagname="UC_SoSanhDienThoai" tagprefix="uc5" %>
+
+<%@ Register src="Controls/UC_GioHangNho.ascx" tagname="UC_GioHangNho" tagprefix="uc6" %>
+
+<%@ Register src="Controls/UC_TimTheoTinhNang.ascx" tagname="UC_TimTheoTinhNang" tagprefix="uc7" %>
+
+<%@ Register src="Controls/UC_DienThoaiBanChay.ascx" tagname="UC_DienThoaiBanChay" tagprefix="uc8" %>
+
+<%@ Register src="Controls/UC_HoTroTrucTuyen.ascx" tagname="UC_HoTroTrucTuyen" tagprefix="uc9" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Phạm Hồng Tiến | 0168 846 4040</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/nivo-slider.css" />
+<link type="text/css" rel="stylesheet" href="css/tabs.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<form runat="server" id="FormMaster1">
+<asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+<div id="tooltip"></div>
+<center>
+<div id="container">
+    <div id="ctn_banner">
+       <uc1:UC_Banner ID="UC_Banner" runat="server" /> 
+    </div><!--End #banner-->
+
+    <div id="menu_top">
+        <uc2:UC_Menu ID="UC_Menu" runat="server" />
+    </div><!-- End #menu_top-->
+    
+    <div id="sidebarleft">
+		<div class="ctn_timkiemdienthoai">
+		    <uc3:UC_TimKiemDienThoai ID="UC_TimKiemDienThoai" runat="server" />
+		</div><!--End .ctn_timkiemdienthoai-->
+            
+		<div class="ctn_cachangdienthoai">
+		    <uc4:UC_CacHangDienThoai ID="UC_CacHangDienThoai" runat="server" />
+		</div><!--End .ctn_cachangdienthoai-->
+    
+		<div class="ctn_sosanhdienthoai">	
+		    <uc5:UC_SoSanhDienThoai ID="UC_SoSanhDienThoai" runat="server" />
+		</div><!--End .ctn_sosanhdienthoai-->
+    
+		<div class="ctn_giohangnho">
+		    <uc6:UC_GioHangNho ID="UC_GioHangNho" runat="server" />
+		</div><!--End .ctn_giohangnho-->
+
+    </div><!--End#sidebarleft-->
+    
+    <div id="content">
+        <asp:ContentPlaceHolder ID="MainContaint" runat="server">
+           
+        </asp:ContentPlaceHolder>	
+    </div><!--End #content-->
+    
+    <div id="sidebarright">
+    	<div class="ctn_timtheotinhnang">
+		    <uc7:UC_TimTheoTinhNang ID="UC_TimTheoTinhNang" runat="server" />
+		</div><!--End.ctn_timtheotinhnang-->
+        
+        <div class="ctn_dienthoaibanchay mg">
+            <uc8:UC_DienThoaiBanChay ID="UC_DienThoaiBanChay" runat="server" />
+        </div><!--End .ctn_dienthoaibanchay-->
+        
+		<div class="ctn_hotrotructuyen mg">
+            <uc9:UC_HoTroTrucTuyen ID="UC_HoTroTrucTuyen" runat="server" />
+        </div><!--End .ctn_hotrotructuyen-->
+    </div><!--End #sidebarright-->
+    
+    <div id="footer">
+    </div><!--End.#footer-->
+    
+</div><!--End #container-->
+</center>
+</form>
+</body>
+</html>
