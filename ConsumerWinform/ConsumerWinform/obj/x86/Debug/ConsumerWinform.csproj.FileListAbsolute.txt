@@ -1,0 +1,13 @@
+D:\ShopDienThoai\ConsumerWinform\ConsumerWinform\obj\x86\Debug\ComsumerWinform.FormConsumer.resources
+D:\ShopDienThoai\ConsumerWinform\ConsumerWinform\obj\x86\Debug\ComsumerWinform.FormHSX.resources
+D:\ShopDienThoai\ConsumerWinform\ConsumerWinform\obj\x86\Debug\ComsumerWinform.FormThem.resources
+D:\ShopDienThoai\ConsumerWinform\ConsumerWinform\obj\x86\Debug\ComsumerWinform.FormTNDT.resources
+D:\ShopDienThoai\ConsumerWinform\ConsumerWinform\obj\x86\Debug\ComsumerWinform.FormTTChiTiet.resources
+D:\ShopDienThoai\ConsumerWinform\ConsumerWinform\obj\x86\Debug\ConsumerWinform.Properties.Resources.resources
+D:\ShopDienThoai\ConsumerWinform\ConsumerWinform\obj\x86\Debug\ConsumerWinform.csproj.GenerateResource.Cache
+D:\ShopDienThoai\ConsumerWinform\ConsumerWinform\bin\Debug\ConsumerWinform.exe.config
+D:\ShopDienThoai\ConsumerWinform\ConsumerWinform\bin\Debug\ConsumerWinform.exe
+D:\ShopDienThoai\ConsumerWinform\ConsumerWinform\bin\Debug\ConsumerWinform.pdb
+D:\ShopDienThoai\ConsumerWinform\ConsumerWinform\obj\x86\Debug\ConsumerWinform.exe
+D:\ShopDienThoai\ConsumerWinform\ConsumerWinform\obj\x86\Debug\ConsumerWinform.pdb
+D:\ShopDienThoai\ConsumerWinform\ConsumerWinform\obj\x86\Debug\ConsumerWinform.csprojResolveAssemblyReference.cache
