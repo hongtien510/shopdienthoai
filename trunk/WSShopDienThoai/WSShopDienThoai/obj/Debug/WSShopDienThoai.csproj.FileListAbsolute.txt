@@ -1,0 +1,5 @@
+D:\ShopDienThoai\WSShopDienThoai\WSShopDienThoai\bin\WSShopDienThoai.dll
+D:\ShopDienThoai\WSShopDienThoai\WSShopDienThoai\bin\WSShopDienThoai.pdb
+D:\ShopDienThoai\WSShopDienThoai\WSShopDienThoai\obj\Debug\WSShopDienThoai.dll
+D:\ShopDienThoai\WSShopDienThoai\WSShopDienThoai\obj\Debug\WSShopDienThoai.pdb
+D:\ShopDienThoai\WSShopDienThoai\WSShopDienThoai\obj\Debug\WSShopDienThoai.csprojResolveAssemblyReference.cache
