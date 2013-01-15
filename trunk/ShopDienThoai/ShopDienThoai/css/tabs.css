@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+.ctn_tab{//position:relative}
+.mg_bottom_tab{margin-bottom:10px}
+.tabs{
+	display:inline-block;
+	margin-left:10px;
+	margin-bottom:-2px;
+	z-index:1000;
+	position:relative;
+	//left:-100px;
+	
+	float:left;
+}
+
+.ctn_tab .listtab{
+	clear:both;	
+	z-index:0;
+	margin-bottom:-1px;
+	position:relative;
+	background:url(../images/bg_middle.png);
+	-moz-border-radius:0px 0px 5px 5px;
+	-webkit-border-radius:0px 0px 5px 5px;
+}
+
+.ctn_tab .listtab ul li{
+	list-style:none;
+	width:139px;
+	height:200px;
+	border:1px solid #dcdcdc;
+	float:left;
+	//border-left:none;
+}
+
+.hidden{
+	display:none;
+}
+
+.tab{
+	width:140px;
+	float:left;
+	//border:1px solid #dcdcdc;
+	border-bottom:none;
+	padding:0px;
+	margin-right:1px;
+	background:url(../images/title_tab.png);
+	//-moz-border-radius:5px 5px 0px 0px;
+	//-webkit-border-radius:5px 5px 0px 0px;
+	
+}
+
+.tab a{
+	display:block;	
+	padding:8px 0px;
+	color:#292929;	
+}
+
+.action{
+	background:url(../images/title_tab_active.png);margin-bottom:-2PX;POSITION:relative;Z-INDEX:2;PADDING-BOTTOM:2PX;
+}
+
+.ctn_tab .listtab_ct{
+	clear:both;	
+	background:url(../images/bg_middle.png);
+}
+
+.ctn_tab .listtab_ct table{
+	width:98%;
+	border:1px solid #dcdcdc;
+	border-collapse:collapse;
+	
+}
+
+.ctn_tab .listtab_ct table tr td{
+	padding:5px 0px;
+	border-right:1px solid #dcdcdc;
+	border-bottom:1px solid #dcdcdc;
+	padding-left:10px;
+}
+

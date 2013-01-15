@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage3.master.cs" Inherits="ShopDienThoai.MasterPage3" %>
+
+<%@ Register src="Controls/UC_Banner.ascx" tagname="UC_Banner" tagprefix="uc1" %>
+
+<%@ Register src="Controls/UC_Menu.ascx" tagname="UC_Menu" tagprefix="uc2" %>
+
+<%@ Register src="Controls/UC_TimKiemDienThoai.ascx" tagname="UC_TimKiemDienThoai" tagprefix="uc3" %>
+
+<%@ Register src="Controls/UC_CacHangDienThoai.ascx" tagname="UC_CacHangDienThoai" tagprefix="uc4" %>
+
+<%@ Register src="Controls/UC_SoSanhDienThoai.ascx" tagname="UC_SoSanhDienThoai" tagprefix="uc5" %>
+
+<%@ Register src="Controls/UC_GioHangNho.ascx" tagname="UC_GioHangNho" tagprefix="uc6" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Phạm Hồng Tiến | 0168 846 4040</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<form id="FormMaster3" runat="server">
+<asp:ScriptManager ID="ScriptManager3" runat="server">
+</asp:ScriptManager>
+<center><div id="container">
+    <div id="ctn_banner">
+        <uc1:UC_Banner ID="UC_Banner1" runat="server" />
+    </div><!--End #banner-->
+    
+    <div id="menu_top">
+        <uc2:UC_Menu ID="UC_Menu1" runat="server" />
+    </div><!-- End #menu_top-->
+    
+    <div id="sidebarleft">
+		<div class="ctn_timkiemdienthoai">
+		    <uc3:UC_TimKiemDienThoai ID="UC_TimKiemDienThoai1" runat="server" />
+		</div><!--End .ctn_timkiemdienthoai-->
+    
+		<div class="ctn_cachangdienthoai">
+		    <uc4:UC_CacHangDienThoai ID="UC_CacHangDienThoai1" runat="server" />
+		</div><!--End .ctn_cachangdienthoai-->
+    
+		<div class="ctn_sosanhdienthoai">	
+		    <uc5:UC_SoSanhDienThoai ID="UC_SoSanhDienThoai1" runat="server" />
+		</div><!--End .ctn_sosanhdienthoai-->
+    
+		<div class="ctn_giohangnho">
+		    <uc6:UC_GioHangNho ID="UC_GioHangNho1" runat="server" />
+		</div><!--End .ctn_giohangnho-->
+    </div><!--End#sidebarleft-->
+    
+    <div id="content3">
+        <asp:ContentPlaceHolder ID="Detail2Content" runat="server">
+        </asp:ContentPlaceHolder>
+    </div><!--End #content3-->
+    
+    <div id="footer">
+    </div><!--End.#footer-->
+    
+</div><!--End #container-->
+</center>
+</form>
+</body>
+</html>
