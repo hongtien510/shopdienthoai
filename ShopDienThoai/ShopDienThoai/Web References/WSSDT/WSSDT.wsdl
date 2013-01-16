@@ -2,6 +2,20 @@
 <wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsertDeleteQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDeleteQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertDeleteQueryResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="SelectQuery">
         <s:complexType>
           <s:sequence>
@@ -25,6 +39,12 @@
       </s:element>
     </s:schema>
   </wsdl:types>
+  <wsdl:message name="InsertDeleteQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:InsertDeleteQuery" />
+  </wsdl:message>
+  <wsdl:message name="InsertDeleteQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:InsertDeleteQueryResponse" />
+  </wsdl:message>
   <wsdl:message name="SelectQuerySoapIn">
     <wsdl:part name="parameters" element="tns:SelectQuery" />
   </wsdl:message>
@@ -32,6 +52,10 @@
     <wsdl:part name="parameters" element="tns:SelectQueryResponse" />
   </wsdl:message>
   <wsdl:portType name="WSSDTSoap">
+    <wsdl:operation name="InsertDeleteQuery">
+      <wsdl:input message="tns:InsertDeleteQuerySoapIn" />
+      <wsdl:output message="tns:InsertDeleteQuerySoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="SelectQuery">
       <wsdl:input message="tns:SelectQuerySoapIn" />
       <wsdl:output message="tns:SelectQuerySoapOut" />
@@ -39,6 +63,15 @@
   </wsdl:portType>
   <wsdl:binding name="WSSDTSoap" type="tns:WSSDTSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertDeleteQuery">
+      <soap:operation soapAction="http://tempuri.org/InsertDeleteQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="SelectQuery">
       <soap:operation soapAction="http://tempuri.org/SelectQuery" style="document" />
       <wsdl:input>
@@ -51,6 +84,15 @@
   </wsdl:binding>
   <wsdl:binding name="WSSDTSoap12" type="tns:WSSDTSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertDeleteQuery">
+      <soap12:operation soapAction="http://tempuri.org/InsertDeleteQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="SelectQuery">
       <soap12:operation soapAction="http://tempuri.org/SelectQuery" style="document" />
       <wsdl:input>
@@ -63,10 +105,10 @@
   </wsdl:binding>
   <wsdl:service name="WSSDT">
     <wsdl:port name="WSSDTSoap" binding="tns:WSSDTSoap">
-      <soap:address location="http://localhost:57821/WSSDT.asmx" />
+      <soap:address location="http://localhost:49292/WSSDT.asmx" />
     </wsdl:port>
     <wsdl:port name="WSSDTSoap12" binding="tns:WSSDTSoap12">
-      <soap12:address location="http://localhost:57821/WSSDT.asmx" />
+      <soap12:address location="http://localhost:49292/WSSDT.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

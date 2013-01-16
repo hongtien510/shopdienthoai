@@ -30,6 +30,8 @@ namespace ShopDienThoai.WSSDT {
     [System.Web.Services.WebServiceBindingAttribute(Name="WSSDTSoap", Namespace="http://tempuri.org/")]
     public partial class WSSDT : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
+        private System.Threading.SendOrPostCallback InsertDeleteQueryOperationCompleted;
+        
         private System.Threading.SendOrPostCallback SelectQueryOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
@@ -71,7 +73,39 @@ namespace ShopDienThoai.WSSDT {
         }
         
         /// <remarks/>
+        public event InsertDeleteQueryCompletedEventHandler InsertDeleteQueryCompleted;
+        
+        /// <remarks/>
         public event SelectQueryCompletedEventHandler SelectQueryCompleted;
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/InsertDeleteQuery", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int InsertDeleteQuery(string sql) {
+            object[] results = this.Invoke("InsertDeleteQuery", new object[] {
+                        sql});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void InsertDeleteQueryAsync(string sql) {
+            this.InsertDeleteQueryAsync(sql, null);
+        }
+        
+        /// <remarks/>
+        public void InsertDeleteQueryAsync(string sql, object userState) {
+            if ((this.InsertDeleteQueryOperationCompleted == null)) {
+                this.InsertDeleteQueryOperationCompleted = new System.Threading.SendOrPostCallback(this.OnInsertDeleteQueryOperationCompleted);
+            }
+            this.InvokeAsync("InsertDeleteQuery", new object[] {
+                        sql}, this.InsertDeleteQueryOperationCompleted, userState);
+        }
+        
+        private void OnInsertDeleteQueryOperationCompleted(object arg) {
+            if ((this.InsertDeleteQueryCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.InsertDeleteQueryCompleted(this, new InsertDeleteQueryCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SelectQuery", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -118,6 +152,32 @@ namespace ShopDienThoai.WSSDT {
                 return true;
             }
             return false;
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]
+    public delegate void InsertDeleteQueryCompletedEventHandler(object sender, InsertDeleteQueryCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.17929")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class InsertDeleteQueryCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal InsertDeleteQueryCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
         }
     }
     
