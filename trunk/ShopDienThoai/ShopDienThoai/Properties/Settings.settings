@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="ShopDienThoai_WSSDT_WSSDT" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://localhost:57821/WSSDT.asmx</Value>
+      <Value Profile="(Default)">http://localhost:49292/WSSDT.asmx</Value>
     </Setting>
   </Settings>
 </SettingsFile>

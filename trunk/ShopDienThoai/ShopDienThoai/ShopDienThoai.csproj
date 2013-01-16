@@ -454,10 +454,10 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://localhost:57821/WSSDT.asmx">
+    <WebReferenceUrl Include="http://localhost:49292/WSSDT.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\WSSDT\</RelPath>
-      <UpdateFromURL>http://localhost:57821/WSSDT.asmx</UpdateFromURL>
+      <UpdateFromURL>http://localhost:49292/WSSDT.asmx</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
